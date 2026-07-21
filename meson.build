@@ -23,5 +23,6 @@ executable('bf',
         'src/brainfuck.c',
         'src/linux.asm'
     ],
-    nasm_args : ['-f', 'elf64']
+    nasm_args : ['-f', 'elf64'],
+    include_directories: include_directories('src')
 )

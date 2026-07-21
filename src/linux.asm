@@ -1,4 +1,4 @@
-%include "defs.h"
+%include "defs.asm"
 
 global _start
 global bf_exit
