@@ -1,5 +1,6 @@
 %include "defs.asm"
 
+extern bf_main
 global _start
 global bf_exit
 global bf_mmap
@@ -15,7 +16,7 @@ section .text
 _start:
     pop rcx
     cmp rcx, 2
-    jge bf_pass_arg
+    jge _bf_pass_arg
 
     mov rdi, BF_NULL
     call _bf_call_main
